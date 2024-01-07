@@ -1,0 +1,123 @@
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://www.cincinnatistate.edu/wp-content/uploads/2024/01/headersuggestion2024-1920x723.jpg);
+  height: 300px;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  color: white;
+  font-size: 4rem;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-bottom: 1px solid rgb(103, 103, 103); */
+}
+
+.degree-text {
+  text-align: center;
+  color: rgb(103, 103, 103);
+}
+
+#apply-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 1000px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#apply-btn:hover {
+  background-color: rgb(55, 96, 67);
+}
+
+.nav-desktop {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav {
+  padding: 20px;
+}
+
+.the-top-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  height: 1px;
+  background-color: gray;
+  width: 100%;
+  border: none;
+}
+
+.the-top-wrapper-desktop {
+  display: none;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1100px) {
+  .image-wrapper {
+    height: 800px;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    width: 1100px;
+  }
+
+  .nav-desktop {
+    display: flex;
+  }
+
+  .nav-desktop-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  h1 {
+    padding: 0px 20px;
+  }
+
+  .the-top-wrapper-desktop {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
